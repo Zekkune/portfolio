@@ -44,13 +44,13 @@ export default {
           '75%': { transform: 'rotate(2deg)' },       // Rotate slightly clockwise
         
         },
-        'slide-down': {
+        slidedown: {
           '0%': { transform: 'translateY(-100%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
-        'slide-up': {
+        slideup: {
           '0%': { transform: 'translateY(0)', opacity: '1' },
-          '100%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(10%)', opacity: '1' },
         },
       },
       animation: {
@@ -59,8 +59,8 @@ export default {
         'gradient-xy': 'gradient-xy 4s ease infinite',
         'wiggle': 'wiggle 1.5s ease-in-out',
         'shine': 'shine 2s infinite',
-        'slide-down': 'slide-down 0.5s ease-in-out',
-        'slide-up': 'slide-up 0.5s ease-in-out',
+        'slidedown': 'slide-down 0.5s ease-in-out',
+        'slideup': 'slide-up 0.5s ease-in-out',
       },
       strokeWidth: {
         '01': '1px',

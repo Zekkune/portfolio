@@ -1,3 +1,4 @@
+import { ScaleIcon } from '@heroicons/react/16/solid';
 import React, { useEffect, useState } from 'react';
 
 const Navbar = ({ targetRef }) => {
@@ -32,16 +33,17 @@ const Navbar = ({ targetRef }) => {
     <nav className='relative w-full dark:bg-[#212121] z-[100] shadow-light-below'>
       <div className="flex items-center justify-between h-16">
         <div className="flex items-center ml-8">
-          <p className="text-ponypink dark:text-driedblossom font-bold text-lg">Logo goes here</p>
+          <img src="src/assets/flower.png" alt="" className='size-8 transition-transform duration-300 hover:rotate-180'/>
         </div>
 
         <div className="lg:mr-64 h-full flex flex-row flex-auto justify-end items-center space-x-8">
-          <h1 className="dark:text-white h-6 w-auto mx-2 border-l border-l-driedblossom pl-8 transition duration-300 hover:text-ponypink dark:hover:text-driedblossom select-none">
+          <a href='https://www.linkedin.com/in/christian-j-adams/' target="_blank" rel="noopener noreferrer" className="dark:text-white h-6 w-auto mx-2 border-l border-l-driedblossom pl-8 transition duration-500 hover:text-ponypink dark:hover:text-driedblossom select-none">
             LinkedIn
-          </h1>
-          <h1 className="dark:text-white h-6 w-auto mx-2 transition duration-300 hover:text-ponypink dark:hover:text-driedblossom select-none">
+          </a>
+          <a href="https://github.com/zekkune" target='_blank'><h1 className="dark:text-white h-6 w-auto mx-2 transition duration-300 hover:text-ponypink dark:hover:text-driedblossom select-none">
             GitHub
-          </h1>
+          </h1></a>
+          
           <h1 className="dark:text-white h-6 w-auto mx-2 transition duration-300 hover:text-ponypink dark:hover:text-driedblossom select-none">
             Contact Me
           </h1>

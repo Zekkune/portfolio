@@ -24,7 +24,7 @@ const TypedComponent = () => {
   }, []);
 
   return (
-    <h1 className='text-gradient dark:bg-gradient-to-b from-cherryblossom via-driedblossom to-cherryblossom dark:animate-gradient-y text-8xl flex flex-initial pb-2 border border-green-700 self-center'>
+    <h1 className='text-gradient dark:bg-gradient-to-b from-cherryblossom via-driedblossom to-cherryblossom dark:animate-gradient-y text-8xl flex flex-initial pb-2 self-start ml-8'>
       <span ref={typedElement} className='flex flex-auto'></span>
     </h1>
   );
