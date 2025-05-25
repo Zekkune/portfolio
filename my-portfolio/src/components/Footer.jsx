@@ -1,14 +1,15 @@
 import React from 'react';
-
+import linkedinIcon from '../assets/icons/linkedin.png';
+import githubIcon from '../assets/icons/github.png';
 
 const Footer = () => {
   return (
-    <footer className="relative w-full dark:bg-[#212121] z-[100] shadow-light-above py-6">
+    <footer className="relative w-full dark:bg-[#212121] z-[100] shadow-light-above py-6" >
       {/* Main Container */}
       <div className="grid grid-cols-3 gap-8 px-8 max-w-5xl mx-auto">
         {/* Contact Info */}
         <div className="flex flex-col items-start">
-          <h2 className="dark:text-driedblossom text-base font-semibold">Contact Me</h2>
+          <h2 id='Footer' className="dark:text-driedblossom text-base font-semibold">Contact Me</h2>
           <ul className="dark:text-white text-sm space-y-2 mt-2">
             <li>christian.adams22405@gmail.com</li>
             <li>+1 757 658 8852</li>
@@ -62,7 +63,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="dark:text-white text-sm transition-transform duration-300 hover:scale-105"
                 >
-                  <img src="src/assets/icons/linkedin.png" alt="" className='h-12 w-12'/>
+                  <img src={linkedinIcon} alt="LinkedIn" className="h-12 w-12" />
                 </a>
                 <a
                   href="https://github.com/zekkune"
@@ -70,7 +71,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="dark:text-white text-sm transition-transform duration-300 hover:scale-105"
                 >
-                  <img src="src/assets/icons/github.png" alt="" className='h-12 w-12'/>
+                  <img src={githubIcon} alt="GitHub" className="h-12 w-12" />
                 </a>
               </div>
             </div>

@@ -98,7 +98,7 @@ export default {
         'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
         'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
         'gradient-to-bottom': 'linear-gradient(to bottom, #F399BA 45%, #6FBFFC 45%)',
-        'sakura': "url('src/assets/sakara .avif')",
+        'sakura': "url('src/assets/sakara.avif')",
         'bcb': "url('src/assets/bcb-removebg-preview.png')",
         'custom-gradient': 'radial-gradient(farthest-corner at 50% 100%, rgba(255, 105, 180, 0.5) 0%, rgba(255, 105, 180, 0) 100%)',
         // Add other gradient directions if needed
