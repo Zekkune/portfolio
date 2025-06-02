@@ -18,31 +18,30 @@ export default {
           },
         },
         'gradient-y': {
-            '0%, 100%': {
-              'background-size': '200% 200%',
-              'background-position': 'center top',
-            },
-            '50%': {
-              'background-size': '200% 200%',
-              'background-position': 'center bottom',
-            },
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'center top',
           },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'center bottom',
+          },
+        },
         'gradient-xy': {
-            '0%, 100%': {
-              'background-size': '200% 200%',
-              'background-position': 'left top',
-            },
-            '50%': {
-              'background-size': '200% 200%',
-              'background-position': 'right bottom',
-            },
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left top',
           },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right bottom',
+          },
+        },
         wiggle: {
-          '0%, 100%': { transform: 'rotate(0deg)' },   // Start and end in the original position
-          '25%': { transform: 'rotate(2deg)' },       // Rotate slightly clockwise
-          '50%': { transform: 'rotate(-2deg)' },      // Rotate slightly counterclockwise
-          '75%': { transform: 'rotate(2deg)' },       // Rotate slightly clockwise
-        
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '25%': { transform: 'rotate(2deg)' },
+          '50%': { transform: 'rotate(-2deg)' },
+          '75%': { transform: 'rotate(2deg)' },
         },
         slidedown: {
           '0%': { transform: 'translateY(-100%)', opacity: '0' },
@@ -51,6 +50,17 @@ export default {
         slideup: {
           '0%': { transform: 'translateY(0)', opacity: '1' },
           '100%': { transform: 'translateY(10%)', opacity: '1' },
+        },
+        // 🌸 Added falling animation for petals
+        fall: {
+          '0%': {
+            transform: 'translateY(-10vh) rotate(0deg)',
+            opacity: '0.8',
+          },
+          '100%': {
+            transform: 'translateY(110vh) rotate(360deg)',
+            opacity: '0',
+          },
         },
       },
       animation: {
@@ -61,6 +71,8 @@ export default {
         'shine': 'shine 2s infinite',
         'slidedown': 'slide-down 0.5s ease-in-out',
         'slideup': 'slide-up 0.5s ease-in-out',
+        // 🌸 Falling animation
+        'fall': 'fall 10s linear infinite',
       },
       strokeWidth: {
         '01': '1px',
@@ -87,11 +99,10 @@ export default {
         Nunito: ['"Nunito"']
       },
       boxShadow: {
-        'solid-pony': '-8px 8px 0px 2px #ee6b9b', // Solid pink shadow
+        'solid-pony': '-8px 8px 0px 2px #ee6b9b',
         'solid-bluey':'-8px 8px 0px 2px rgba(111, 191, 252, 1)',
         'test': '0px 0px 50px 10px rgba(255, 105, 180, 0.5)',
-        'light-below': '0px 10px 20px #ee6b9b, 0px 5px 10px rgba(255, 105, 180, 0.5)',
-      
+        'light-below': '0px 5px 50px #ee6b9b, 0px 5px 500px rgba(255, 105, 180, 0.5)',
       },
       backgroundImage: {
         'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
@@ -101,18 +112,15 @@ export default {
         'sakura': "url('src/assets/sakara.avif')",
         'bcb': "url('src/assets/bcb-removebg-preview.png')",
         'custom-gradient': 'radial-gradient(farthest-corner at 50% 100%, rgba(255, 105, 180, 0.5) 0%, rgba(255, 105, 180, 0) 100%)',
-        // Add other gradient directions if needed
+        'sakuraTree' : "url(../assets/sakura-tree.png)"
       },
       borderColor: {
         'semi-transparent-black': 'rgba(0, 0, 0, 0.2)',
         'semi-transparent-white': 'rgba(255, 255, 255, 0.5)',
-        // Add more colors as needed
       },
     },
   },
 
-
-  
   plugins: [
     function ({ addUtilities, theme }) {
       addUtilities({
@@ -122,7 +130,7 @@ export default {
           '-webkit-text-fill-color': 'transparent',
         },
         '.text-gradient2': {
-          'background-image': 'linear-gradient(to right, #ee6b9b 0%, #F399BA 65%, #F6B8CD 85%)',
+          'background-image': 'linear-gradient(to right, #ee6b9b 0%, #212121 65%, #333333 85%)',
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
         },
@@ -152,12 +160,6 @@ export default {
           '-webkit-text-fill-color': 'transparent',
         },
       });
-      
     },
-    
   ],
-
 }
-
-
-

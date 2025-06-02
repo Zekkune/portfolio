@@ -29,7 +29,7 @@ export default function Projects () {
   ];
 
   return (
-    <div className="flex flex-row flex-wrap gap-2 justify-evenly h-full w-full dark:bg-[#212121] shadow-[5px_5px_10px_#1c1c1c,-5px_-5px_10px_#262626] p-4" id="Projects">
+    <div className="flex flex-row flex-wrap gap-2 justify-evenly h-full w-full dark:bg-[#212121] p-4" id="Projects">
       {projects.map((project, index) => (
         <a href={project.link} target="_blank" rel="noopener noreferrer" key={index}>
           <div className="relative flex flex-col w-[24rem] h-[28rem] mb-4 border border-driedblossom rounded-[10px] overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
