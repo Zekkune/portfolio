@@ -9,7 +9,7 @@ export default defineConfig({
       targets: [
         {
           src: 'src/assets',  // This is your existing folder
-          dist: '.'       // This will copy to dist/assets/
+          dest: '.'       // This will copy to dist/assets/
         }
       ]
     })
