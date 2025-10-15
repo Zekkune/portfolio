@@ -55,7 +55,7 @@ export default function Home() {
     <>
       <div className={`relative h-auto w-screen flex flex-col ${backgroundColor} dark:bg-[#212121] min-h-screen`} id="Home">
 
-        <img src={sakuraTree} className="absolute z-0 opacity-40" ></img>
+        <img src={sakuraTree} className="absolute z-0 opacity-40 w-full h-full" ></img>
         
         {/* 🌸 Petal Background Layer */}
         <div id="petal-container" className="absolute inset-0 z-0 overflow-hidden pointer-events-none" />
